@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.nurhossain.e_commerceapplication.R
 import com.nurhossain.e_commerceapplication.data.Resource
 import com.nurhossain.e_commerceapplication.data.Status
@@ -31,7 +32,9 @@ class ProductCategoryFragment : Fragment() {
 
                 Status.SUCCESS -> {
                     if (it.data != null){
-                        productCategoryAdapter = ProductCategoryAdapter(it.data)
+                        productCategoryAdapter = ProductCategoryAdapter(it.data){
+                            findNavController().navigate(R.id.productListFragment)
+                        }
                         binding.homeCategoriesRv.adapter = productCategoryAdapter
                     }
                     hideLoadingScreen()

@@ -10,4 +10,9 @@
         android:name="com.nurhossain.e_commerceapplication.ui.product_category.ProductCategoryFragment"
         android:label="fragment_product_category"
         tools:layout="@layout/fragment_product_category" />
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.nurhossain.e_commerceapplication.ui.product_list.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" />
 </navigation>
