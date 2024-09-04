@@ -21,7 +21,7 @@ class ProductCategoryAdapter(private val categories: List<ProductCategoryItem>,p
         val category = categories[position]
         holder.nameTextView.text = category.name
         Picasso.get().load(category.image).into(holder.imageView)
-        holder.imageView.setOnClickListener {
+        holder.itemView.setOnClickListener {
             category.id?.let { it1 -> callBack(it1) }
         }
     }

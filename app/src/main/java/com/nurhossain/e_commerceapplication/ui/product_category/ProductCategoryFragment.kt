@@ -46,6 +46,14 @@ class ProductCategoryFragment : Fragment() {
             }
         }
 
+        binding.toolbarProfile.setOnClickListener {
+            findNavController().navigate(R.id.profileFragment)
+        }
+
+        binding.ivCart.setOnClickListener {
+
+        }
+
         return binding.root
     }
 

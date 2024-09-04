@@ -15,4 +15,19 @@
         android:name="com.nurhossain.e_commerceapplication.ui.product_list.ProductListFragment"
         android:label="fragment_product_list"
         tools:layout="@layout/fragment_product_list" />
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.nurhossain.e_commerceapplication.ui.product_details.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.nurhossain.e_commerceapplication.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.nurhossain.e_commerceapplication.ui.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
 </navigation>
